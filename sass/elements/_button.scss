@@ -1,3 +1,21 @@
 .button {
+  display: inline-block;
+  padding: 16px 29.5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(20px / 14px);
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: $button-color;
+  color: $primary-text-color;
+  border-radius: 50px;
+  transition: background-color 0.3s ease 0s;
 
-}
+  &:hover {
+    background-color: #69a7e9;
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 14px 20px;
+  }
+     }

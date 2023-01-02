@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Growfy</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <!-- <include src="./partials/header.html"></include> -->
-            <div class="header__container">
-    <a href="" class="header__log">
-        <img src="../img/logo.svg" alt="logo">
-    </a>
-    <nav class="header__menu menu">
-        <button class="menu__icon icon-menu" type="button"></button>
-        <ul class="menu__list">
-            <li class="menu__item">
-                <a href="" class="menu__link">Home</a>
-            </li>
-             <li class="menu__item">
-                <a href="" class="menu__link">About</a>
-            </li>
-             <li class="menu__item">
-                <a href="" class="menu__link">Pages</a>
-            </li>
-             <li class="menu__item">
-                <a href="" class="menu__link">Services</a>
-            </li>
-        </ul>
-    </nav>
-    <a href="" class="header__cart cart-header">
-        <div class="cart-header__text">Cart</div>
-        <div class="cart-header__quatity">0</div>
-    </a>
-    <a href="" class="header__button button">Get started</a>
-</div>
-        </header>
+      <header class="header">
+        <!-- <include src="./partials/header.html"></include> -->
+        <div class="header__container">
+          <a href="" class="header__logo">
+            <img src="../img/logo.svg" alt="logo" />
+          </a>
+          <nav class="header__menu menu">
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Services</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a href="" class="header__cart cart-header">
+            <div class="cart-header__wrapper">
+              <svg
+                class="cart-header__icon"
+                width="30"
+                height="30"
+                aria-label="Cart"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <use href="./img/icons.svg#icon-cart"></use>
+              </svg>
+            </div>
+            <div class="cart-header__text">Cart</div>
+            <div class="cart-header__quantity">100</div>
+          </a>
+          <a href="" class="header__button button">Get started</a>
+          <button class="mobile-menu" type="button">
+            <svg
+              class="mobile-menu__icon"
+              width="40"
+              height="40"
+              aria-label="Mobile menu"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
 
-        <main class="page">
+      <main class="page"></main>
 
-        </main>
-        
-        <footer class="footer">
-            <include src="./partials/footer.html"></include>
-        </footer>
+      <footer class="footer">
+        <include src="./partials/footer.html"></include>
+      </footer>
     </div>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
