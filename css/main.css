@@ -82,6 +82,7 @@ body {
 .button {
   display: inline-block;
   padding: 16px 29.5px;
+  min-width: 160px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4285714286;
@@ -100,6 +101,13 @@ body {
   .button {
     padding: 14px 20px;
   }
+}
+
+.button-dark {
+  background-color: rgba(129, 129, 139, 0.2);
+}
+.button-dark:hover {
+  background-color: rgb(129, 129, 139);
 }
 
 /* ==================Header==================== */
@@ -318,6 +326,9 @@ body {
        -moz-column-gap: 15px;
             column-gap: 15px;
   }
+  .header__container {
+    min-height: 70px;
+  }
   .menu__body {
     position: fixed;
     width: 100%;
@@ -355,7 +366,98 @@ body {
   .menu__link {
     font-size: 32px;
   }
-  .header__container {
-    min-height: 70px;
+}
+/* ==================Header==================== */
+.hero {
+  padding-top: 160px;
+}
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: 120px;
   }
+}
+@media (max-width: 767.98px) {
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.hero__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.hero__title {
+  position: relative;
+  font-weight: 500;
+  font-size: 51.2px;
+  line-height: 1.19140625;
+  color: #FFFFFF;
+  max-width: 520px;
+}
+
+.hero__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background: url(../img/decor.svg) 0 0/100% no-repeat;
+  width: 122px;
+  height: 122px;
+  top: -30px;
+  left: -34px;
+}
+
+.hero__images {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.images-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9.61%;
+}
+
+.images-main__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.images-main__item {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.images-main__item--1, .images-main__item--4 {
+  border-radius: 50%/29%;
+}
+.images-main__item--2 {
+  border-radius: 50% 50% 0 50%;
+}
+.images-main__item--3 {
+  border-radius: 50% 0 50% 50%;
+}
+
+.images-main__item img {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
